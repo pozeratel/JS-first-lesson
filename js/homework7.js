@@ -8,7 +8,7 @@ for (let i = 0; i < friends.length; i += 1) {
 }
 console.log(string);
 
-string = friends.splice(",").join(",  ")
+string = friends.join(",  ")
 console.log(string);
 
 // завдання два
@@ -20,12 +20,12 @@ console.log(cards);
 
 // завдання 3
 const cardToInsert = "Карточка - 6";
-const lastIndex = cards.indexOf("Карточка - 5");
-cards.splice(lastIndex + 1, 0, cardToInsert)
+const lastIndex = cards.indexOf("Карточка - 5") + 1;
+cards.splice(lastIndex, 0, cardToInsert)
 console.log(cards);
 
 // завдання 4
 const cardsToUpdate = " Нова Карточка - 4";
 const cardOnesIndex = cards.indexOf("Карточка - 4");
-cards.splice(lastIndex - 1, 1, cardsToUpdate)
+cards.splice(cardOnesIndex, 1, cardsToUpdate)
 console.log(cards)
