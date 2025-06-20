@@ -64,22 +64,22 @@ console.log(`Найпродуктивніший співробітник це ${
 
 // Напиши функцію countTotalSalary(employees) приймаючу об'єкт зарплат. Функція рахує загальну суму зарплати працівників і повертає її. Кожне поле об'єкта, переданого в функцію, має вигляд "ім'я": "зарплата".
 
-// const employees = {
-//     Yaroslav: 7200,
-//     Artem: 1300,
-//     Bogdan: 6300,
-//     Nikita: 4700,
-// }
+const employees = {
+    Yaroslav: 7200,
+    Artem: 1300,
+    Bogdan: 6300,
+    Nikita: 4700,
+}
 
 
-// const countTotalSalary = function (obj) {
-//     let sum = 0;
-//     for (const item in obj) {
-//         sum += obj[item];
-//     }
-//     return sum
-// };
-// console.log(countTotalSalary(employees));
+const countTotalSalary = function (obj) {
+    let sum = 0;
+    for (const item in obj) {
+        sum += obj[item];
+    }
+    return sum
+};
+console.log(countTotalSalary(employees));
 
 // Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості.Повертає масив значень певної властивості prop з кожного об'єкта в масиві.
 
