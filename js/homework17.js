@@ -28,7 +28,7 @@ const addIngredients = ingredients.map(item => {
     return liRef
 })
 
-listRef.append(...ingredients)
+listRef.append(...addIngredients);
 
 
 const images = [
